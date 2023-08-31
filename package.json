@@ -1,0 +1,26 @@
+{
+    "name": "@gd_l/create-project-cli",
+    "version": "0.0.1",
+    "description": "cli工具用于创建前端项目",
+    "main": "index.js",
+    "bin": {
+        "lgd-cli": "index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LGDddd/create-project-cli.git"
+    },
+    "author": "liguodi",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LGDddd/create-project-cli/issues"
+    },
+    "homepage": "https://github.com/LGDddd/create-project-cli#readme",
+    "dependencies": {
+        "npm-pkg-versions": "^1.1.1",
+        "version-diff": "^2.0.0"
+    }
+}

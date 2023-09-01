@@ -1,2 +1,8 @@
+.DS_Store
+.idea
+*.cpuprofile
+*.local
+*.log
+/docs/.vitepress/cache
+dist
 node_modules
-yarn.lock

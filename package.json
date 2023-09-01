@@ -1,26 +1,44 @@
 {
-    "name": "@gd_l/create-project-cli",
+    "name": "create-gd-app",
+    "type": "module",
     "version": "0.0.1",
-    "description": "cli工具用于创建前端项目",
-    "main": "index.js",
-    "bin": {
-        "lgd-cli": "index.js"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
+    "author": "liguodi",
+    "homepage": "https://github.com/LGDddd/create-gd-app",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/LGDddd/create-project-cli.git"
+        "url": "git+https://github.com/LGDddd/create-gd-app.git"
     },
-    "author": "liguodi",
-    "license": "MIT",
     "bugs": {
-        "url": "https://github.com/LGDddd/create-project-cli/issues"
+        "url": "https://github.com/LGDddd/create-gd-app/issues"
     },
-    "homepage": "https://github.com/LGDddd/create-project-cli#readme",
-    "dependencies": {
-        "npm-pkg-versions": "^1.1.1",
-        "version-diff": "^2.0.0"
+    "bin": {
+        "create-gd-app": "index.js"
+    },
+    "files": [
+        "index.js",
+        "template/**",
+        "dist"
+    ],
+    "engines": {
+        "node": "^18.0.0 || >=20.0.0"
+    },
+    "scripts": {
+        "dev": "unbuild --stub",
+        "build": "unbuild",
+        "typecheck": "tsc --noEmit",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^0.41.0",
+        "@types/cross-spawn": "^6.0.2",
+        "@types/minimist": "^1.2.2",
+        "@types/prompts": "^2.4.4",
+        "cross-spawn": "^7.0.3",
+        "eslint": "^8.48.0",
+        "kolorist": "^1.8.0",
+        "minimist": "^1.2.8",
+        "prompts": "^2.4.2",
+        "unbuild": "^2.0.0",
+        "vitepress": "1.0.0-rc.10"
     }
 }

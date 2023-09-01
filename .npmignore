@@ -1,2 +1,11 @@
+.vscode
+docs
 node_modules
-yarn.lock
+src
+.editorconfig
+.eslintignore
+.eslintrc
+.gitignore
+build.config.ts
+pnpm-lock.yaml
+tsconfig.json

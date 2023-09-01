@@ -13,7 +13,6 @@ export default defineBuildConfig({
     alias: {
         prompts: 'prompts/lib/index.js',
     },
-    outDir: 'build/dist/',
     hooks: {
         'rollup:options': function (ctx, options) {
             options.plugins = [

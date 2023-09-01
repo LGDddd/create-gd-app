@@ -1,6 +1,7 @@
 .vscode
 docs
 node_modules
+node_modules/
 src
 .editorconfig
 .eslintignore
@@ -9,3 +10,4 @@ src
 build.config.ts
 pnpm-lock.yaml
 tsconfig.json
+template/vue3-admin-web/node_modules

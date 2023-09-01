@@ -9,7 +9,7 @@
         "build-only": "vite build",
         "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
         "lint:eslint": "eslint --ext .js,.jsx,.vue,.ts,.tsx,.json,.html",
-        "lint:stylelint": "stylelint *.{scss,css,less,vue,html} --fix",
+        "lint:stylelint": "stylelint *.{scss,css,less,vue} --fix",
         "prepare": "husky install",
         "lint-staged": "lint-staged",
         "cz": "npx cz"
@@ -54,7 +54,7 @@
         "!(components.d|auto-imports.d)*.{js,jsx,vue,ts,tsx,json,html}": [
             "eslint  --fix"
         ],
-        "*.{scss,css,less,vue,html}": [
+        "*.{scss,css,less,vue}": [
             "stylelint --fix"
         ]
     }

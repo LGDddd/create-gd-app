@@ -18,6 +18,5 @@
         "scss",
         "postcss",
         "vue",
-        "html",
     ]
 }

@@ -11,7 +11,8 @@
         "lint:eslint": "eslint --ext .js,.jsx,.vue,.ts,.tsx,.json,.html",
         "lint:stylelint": "stylelint *.{scss,css,less,vue,html} --fix",
         "prepare": "husky install",
-        "lint-staged": "lint-staged"
+        "lint-staged": "lint-staged",
+        "cz": "npx cz"
     },
     "dependencies": {
         "pinia": "^2.1.6",
@@ -20,11 +21,13 @@
     },
     "devDependencies": {
         "@antfu/eslint-config": "^0.41.0",
+        "@commitlint/config-conventional": "^17.7.0",
         "@tsconfig/node18": "^18.2.0",
         "@types/node": "^18.17.5",
         "@vitejs/plugin-vue": "^4.3.1",
         "@vitejs/plugin-vue-jsx": "^3.0.2",
         "@vue/tsconfig": "^0.4.0",
+        "commitlint": "^17.7.1",
         "commitizen": "^4.3.0",
         "conventional-changelog": "^5.0.0",
         "conventional-changelog-cli": "^4.0.0",
